@@ -9,5 +9,7 @@ curl -sL https://raw.githubusercontent.com/dim-ghub/Withdrawal/refs/heads/main/i
 
 ## F.A.Q. and bugs
 
-Question: "Ermmmm... it freaking crashes?!/1!1?"
-Answer: ![Cat with a big thumbs up](https://media1.tenor.com/m/DtD4LZbctTIAAAAC/tamm-cat.gif)
+### Question: "Ermmmm... it freaking crashes?!/1!1?"
+Answer:
+
+![Cat with a big thumbs up](https://media1.tenor.com/m/DtD4LZbctTIAAAAC/tamm-cat.gif)
