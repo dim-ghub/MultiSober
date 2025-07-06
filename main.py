@@ -10,9 +10,9 @@ import ast
 import logging
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
-log = logging.getLogger("MultiSober")
+log = logging.getLogger("Withdrawal")
 
-INSTANCES_DIR = Path.home() / "MultiSober" / "Instances"
+INSTANCES_DIR = Path.home() / "Withdrawal" / "Instances"
 INSTANCES_LIST = INSTANCES_DIR / "Instances.list"
 APP_ID = "org.vinegarhq.Sober"
 
@@ -23,7 +23,7 @@ SOBER_CONFIG_FILE = SOBER_CONFIG_DIR / "config.json"
 class InstanceAlreadyExist(Exception):
     pass
 
-class MultiSoberManager:
+class WithdrawalManager:
     def __init__(self):
         INSTANCES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -235,11 +235,11 @@ class InstanceRow(Gtk.ListBoxRow):
         dialog.present()
 
 
-class MultiSoberWindow(Gtk.ApplicationWindow):
+class WithdrawalWindow(Gtk.ApplicationWindow):
     def __init__(self, app):
-        super().__init__(application=app, title="MultiSober Manager")
+        super().__init__(application=app, title="Withdrawal Manager")
         self.set_default_size(600, 400)
-        self.manager = MultiSoberManager()
+        self.manager = WithdrawalManager()
 
         self.vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10, margin_top=10, margin_bottom=10, margin_start=10, margin_end=10)
         self.set_child(self.vbox)
@@ -316,16 +316,16 @@ class MultiSoberWindow(Gtk.ApplicationWindow):
         dialog.connect("response", lambda d, r: d.destroy())
         dialog.present()
 
-class MultiSoberApp(Gtk.Application):
+class WithdrawalApp(Gtk.Application):
     def __init__(self):
-        super().__init__(application_id="org.dim.MultiSober")
+        super().__init__(application_id="org.dim.Withdrawal")
 
     def do_activate(self):
-        win = MultiSoberWindow(self)
+        win = WithdrawalWindow(self)
         win.present()
 
 def main():
-    app = MultiSoberApp()
+    app = WithdrawalApp()
     return app.run()
 
 if __name__ == "__main__":
