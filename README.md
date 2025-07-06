@@ -10,6 +10,12 @@ curl -sL https://raw.githubusercontent.com/dim-ghub/Withdrawal/refs/heads/main/i
 ## F.A.Q. and common bugs
 
 ### Question: "Ermmmm... it freaking crashes?!/1!1?"
-Answer:
+#### Answer:
 
 ![Cat with a big thumbs up](https://media1.tenor.com/m/DtD4LZbctTIAAAAC/tamm-cat.gif)
+
+#### In all seriousness, it's gonna crash sometimes maybe. From my testing it appears super stable and even instance teleporting works (slam dunk on windows multi instance). If you find things that make it crash, do make an issue because it would be nice to document them. That being said, there's absolutely nothing I can do about it.
+
+### Question: What if it gets patched?
+
+#### I doubt the Sober devs will care enough about my little passion project to go out of their way to patch it. But, if they do, I'll unfortunately have to go closed source if I find a new method.
