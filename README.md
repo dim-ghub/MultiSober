@@ -18,4 +18,4 @@ curl -sL https://raw.githubusercontent.com/dim-ghub/Withdrawal/refs/heads/main/i
 
 ### Question: What if it gets patched?
 
-#### I doubt the Sober devs will care enough about my little passion project to go out of their way to patch it. But, if they do, I'll unfortunately have to go closed source if I find a new method.
+#### It's going to be. When it is, I will be obfuscating any new methods.
