@@ -7,7 +7,7 @@ A multi instance launcher for the Roblox for Linux runtime Sober.
 curl -sL https://raw.githubusercontent.com/dim-ghub/Withdrawal/refs/heads/main/install.sh | bash
 ```
 
-## F.A.Q. and bugs
+## F.A.Q. and common bugs
 
 ### Question: "Ermmmm... it freaking crashes?!/1!1?"
 Answer:
